@@ -24,10 +24,6 @@ h1{
     display: none;
 }
 
-.blue{
-    color: $blue;
-}
-
 .text{
     &--small{
         font-size:12px;
@@ -41,4 +37,16 @@ h1{
     &--xlarge{
         font-size:24px;
     }
+    &--h1{
+        font-size:160px;
+    }
+}
+
+.BlackOnWhite{
+    background:white;
+    color:$black;
+}
+
+.blue{
+    color: $blue;
 }
