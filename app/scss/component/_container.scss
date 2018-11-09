@@ -1,0 +1,37 @@
+.container{
+    &--1col{
+        width: 100 / 6 * 1%;
+    }
+
+    &--2col{    
+        width: 100 / 6 * 2 * 1%;
+    }
+
+    &--3col{    
+        width: 100 / 6 * 3 * 1%;
+    }
+
+    &--4col{    
+        width: 100 / 6 * 4 * 1%;
+    }
+}
+
+.col--1{
+    margin-left:100 / 6 * 1%;
+}
+.col--2{
+    margin-left:100 / 6 * 2 * 1%;
+}
+.col--3{
+    margin-left:100 / 6 * 3 * 1%;
+}
+.col--4{
+    margin-left:100 / 6 * 4 * 1%;
+}
+.col--5{
+    margin-left:100 / 6 * 5 * 1%;
+}
+
+section{
+    min-height: 100vh;
+}
