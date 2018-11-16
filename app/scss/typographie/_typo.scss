@@ -25,6 +25,7 @@ h1{
 }
 
 .text{
+
     &--small{
         font-size:12px;
     }
@@ -49,4 +50,8 @@ h1{
 
 .blue{
     color: $blue;
+}
+
+p{
+    margin:2px;
 }

@@ -3,12 +3,16 @@
     height:100%;
     left: 0;
     top: 0;
+    z-index:99999999;
     img{
         position: absolute;
         width:50px;
         top: 100 / 12 * 1%;
         left: 25%;
         transform: translateX(-50%);
+    }
+    .logo{
+        border:none;
     }
     .menu{
         position: absolute;

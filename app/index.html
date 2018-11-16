@@ -6,28 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    
     <script 
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-
+    
     <style>
-            @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
-            </style>
-
+        @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
+    </style>
+    
 </head>
 <body>
-    <section id="styleguide">
-        <h1>header 1</h1>
-        <h2>header 2</h2>
-        <h3>header 3</h3>
-        <h4>header 4</h4>
-        <h5>header 5</h5>
-        <p>paragraphe</p>
-        <a href="">link</a>
+    
+    <section id="asside" class="container--1col">  
+        <img src="assets/img/logo.png" alt="" class="logo">
+        <div class="menu">
+            <div class="menu__label text--xlarge">Menu</div>
+            <div class="menu__hamburger">
+                <span class="menu__hamburger__part menu__hamburger__part--1"></span>
+                <span class="menu__hamburger__part menu__hamburger__part--2"></span>
+                <span class="menu__hamburger__part menu__hamburger__part--3"></span>
+                <span class="menu__hamburger__part menu__hamburger__part--4"></span>
+            </div>
+        </div>
     </section>
-
+    
+    <img class="col--1--reverse float--right container--1col" src="assets/img/waxinteractive.png" id="wax" alt="">
+    <div class="wrapper--start">
+        <section id="intro" class="col--1 container--4col">
+            <div >
+                <h1 id="IntroMessage">Mathieu <span class="blue text--h1">ft.</span></h1>
+                <h1 class="BlackOnWhite"  id="Wax">Wax Interactive.</h1>
+            </div>
+        </section>
+    </div>
+    
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -36,53 +50,71 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-
-    <section id="asside" class="container--1col">  
-        <img src="assets/img/logo.png" alt="" class="logo">
-        <div class="menu">
-                <div class="menu__label text--xlarge">Menu</div>
-                <div class="menu__hamburger">
-                    <span class="menu__hamburger__part menu__hamburger__part--1"></span>
-                    <span class="menu__hamburger__part menu__hamburger__part--2"></span>
-                    <span class="menu__hamburger__part menu__hamburger__part--3"></span>
-                    <span class="menu__hamburger__part menu__hamburger__part--4"></span>
-                </div>
-        </div>
-    </section>
-
-    <section id="intro" class="col--1 container--4col">
-        <div >
-            <h1 id="IntroMessage">Mathieu <span class="blue text--h1">ft.</span></h1>
-            <h1 class="BlackOnWhite"  id="Wax">Wax Interactive.</h1>
-        </div>
-    </section>
-
+    
     <section id="mat">
-    <h1></h1>
+        <h1></h1>
+    </section>
+    
+    
+    
+    
+    
+    
+</div>
+<div class="wrapper--section" id="manor">
+
+        <figure class="container--2col col--1--reverse" id="mickey90">
+            <img src="assets/img/Mickey90.PNG" alt="">
+        </figure>
+
+    <section class="col--1 container--2col text--right">
+        <h1 class="text--right">Manor</h1>
+        
+        <p class="blue text--large">Mon client le plus important</p>
+        <p class="text">La mission Manor était axée sur du webmastering. Le site de Manor tourne avec la technologie hybris. Il a  fallu que je me forme au CMS, que j'apprenne les limites et les possibilités. Nous avons surtout crée des pages de contenu lors de promotions hebdomadaire, mensuelles ou événèment tel que les 90 ans de Mickey ou Nöel</p>
     </section>
 
-    <section id="manor" class="col--1 container--2col">
-    <h1>Manor</h1>
-    <p class="blue text--large">Mon client le plus important</p>
-    <p>La mission Manor était axée sur du webmastering. Le site de Manor tourne avec la technologie hybris. Il a  fallu que je me forme au CMS, que j'apprenne les limites et les possibilités. Nous avons surtout crée des pages de contenu lors de promotions hebdomadaire, mensuelles ou événèment tel que les 90 ans de Mickey ou Nöel</p>
+</div>
+
+<div id="nestle" class="wrapper--section">
+    
+    <section class="col--2 container--2col">
+        <h1>Nestlé</h1>
+        <p>Pour Nestlé, j'ai travaillé sur deux projets : Spécial T, leure gamme de thé et de machine à thé et BabyNes, gamme bébé.</p>
+        <p>Special T: Techno utilisée: Oracle Cloud</p>
+        <p>Comme pour Manor, j'ai du apprendre à utiliser la console Oracle pour pouvoir faire des modifications, en html, sur les surveys des différents serveurs</p>
+        <p>BabyNes</p>
+        <p>Pour ce projet, j'ai mis en place des JSON pour les environnements de test et de production qui alimentent les tablettes sur les points de ventes à Hong Kong.</p>
     </section>
+    
+</div>
+</div>
 
-   <section class="col--2 container--2col">
-    <h1>Nestlé</h1>
-    <p>Pour Nestlé, j'ai travaillé sur deux projets : Spécial T, leure gamme de thé et de machine à thé et BabyNes, gamme bébé.</p>
-    <p>Special T: Techno utilisée: Oracle Cloud</p>
-    <p>Comme pour Manor, j'ai du apprendre à utiliser la console Oracle pour pouvoir faire des modifications, en html, sur les surveys des différents serveurs</p>
-    <p>BabyNes</p>
-    <p>Pour ce projet, j'ai mis en place des JSON pour les environnements de test et de production qui alimentent les tablettes sur les points de ventes à Hong Kong.</p>
-   </section>
-   <section class="col--3 container--2col">
-       <h1>OSEC</h1>
-       <p>Avec l'équipe Frontend de WAX, composée de David Bernard, Robin Ferrari et moi-même, nous avons mis en place en framework HTML / SASS alimenté par les backends de Genève.
-           Le programme ainsi réalisé sert pour la chambre de commerce et d'industrie de l'état de Vaud.                                   
-       </p>
-   </section>
-    <script src="js/magicScroll.js"></script>
-    <script src="js/textMachine.js"></script>
 
+<div class="flex--column wrapper--section" id="osec">
+       
+
+    <section class="col--1 container--4col" >
+        <figure class="container--3col float--left">
+            <img src="assets/img/OSEC.png">
+        </figure>
+        <h1>OSEC</h1>
+        <p>Avec l'équipe Frontend de WAX, composée de David Bernard, Robin Ferrari et moi-même, nous avons mis en place en framework HTML / SASS alimenté par les backends de Genève.
+            Le programme ainsi réalisé sert pour la chambre de commerce et d'industrie de l'état de Vaud.                                   
+        </p>
+    </section>
+    
+    <div>
+        <figure class="container--2col float--left col--1">
+            <img src="assets/img/OSEC2.PNG" alt="">
+        </figure>
+        <figure class="container--2col float--right col--1--reverse">
+            <img src="assets/img/OSEC3.PNG" alt="">
+        </figure>
+    </div>
+</div>
+
+<script src="js/magicScroll.js"></script>
+<script src="js/textMachine.js"></script>.
 </body>
 </html>

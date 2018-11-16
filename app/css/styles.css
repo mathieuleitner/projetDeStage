@@ -299,15 +299,23 @@ template {
 
 .container--1col {
   width: 16.66667%; }
+  .container--1col--img {
+    width: calc(100 / 6 * 1 * 1%); }
 
 .container--2col {
   width: 33.33333%; }
+  .container--2col--img {
+    width: calc(100 / 6 * 2 * 1%); }
 
 .container--3col {
   width: 50%; }
+  .container--3col--img {
+    width: calc(100 / 6 * 3 * 1%); }
 
 .container--4col {
   width: 66.66667%; }
+  .container--4col--img {
+    width: calc(100 / 6 * 4 * 1%); }
 
 .col--1 {
   margin-left: 16.66667%; }
@@ -324,8 +332,60 @@ template {
 .col--5 {
   margin-left: 83.33333%; }
 
-section {
-  min-height: 100vh; }
+.col--1--reverse {
+  margin-right: 16.66667%; }
+
+.col--2--reverse {
+  margin-right: 33.33333%; }
+
+.col--3--reverse {
+  margin-right: 50%; }
+
+.col--4--reverse {
+  margin-right: 66.66667%; }
+
+.col--5--reverse {
+  margin-right: 83.33333%; }
+
+.text--left {
+  text-align: left; }
+
+.text--right {
+  text-align: right; }
+
+.float--right {
+  float: right; }
+
+.float--left {
+  float: left; }
+
+.flex--column {
+  display: flex;
+  flex-direction: column; }
+
+.wrapper--start {
+  background: gray; }
+
+.wrapper--section {
+  height: 100vh; }
+
+img {
+  display: float;
+  float: right;
+  width: 100%;
+  z-index: 100000; }
+
+#wax {
+  margin-top: 220px;
+  border: none; }
+
+figure {
+  margin: 0;
+  float: right;
+  background: #2bcfc1; }
+
+figure:hover img {
+  opacity: 0.6; }
 
 .lines {
   position: fixed;
@@ -338,7 +398,7 @@ section {
   z-index: -1; }
 
 .line {
-  width: calc(100 / 6 * 1% - 1px);
+  width: calc(100 / 6 * 1% - 0.9px);
   display: inline-block;
   vertical-align: top;
   height: 100%;
@@ -373,19 +433,23 @@ section {
   height: 100vh; }
 
 body {
+  transition: 1s;
   background: #111; }
 
 #asside {
   position: fixed;
   height: 100%;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 99999999; }
   #asside img {
     position: absolute;
     width: 50px;
     top: 8.33333%;
     left: 25%;
     transform: translateX(-50%); }
+  #asside .logo {
+    border: none; }
   #asside .menu {
     position: absolute;
     top: 50%;
@@ -541,6 +605,21 @@ body {
     height: 25%;
     opacity: 1; } }
 
+#manor {
+  margin-top: 30vh; }
+
+#nestle {
+  position: relative; }
+  #nestle section * {
+    color: black; }
+
+#osec {
+  position: relative; }
+  #osec h1 {
+    color: #b2cc2a; }
+  #osec figure {
+    background: #b2cc2a; }
+
 * {
   font-family: 'Oswald', sans-serif;
   margin: none;
@@ -582,3 +661,6 @@ h1 {
 
 .blue {
   color: #2bcfc1; }
+
+p {
+  margin: 2px; }

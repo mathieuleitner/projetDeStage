@@ -1,18 +1,30 @@
 .container{
     &--1col{
         width: 100 / 6 * 1%;
+        &--img{
+            width:  calc(100 / 6 * 1 * 1%);
+        }
     }
 
     &--2col{    
         width: 100 / 6 * 2 * 1%;
+        &--img{
+            width:  calc(100 / 6 * 2 * 1% );
+        }
     }
 
     &--3col{    
         width: 100 / 6 * 3 * 1%;
+        &--img{
+            width:  calc(100 / 6 * 3 * 1% );
+        }
     }
 
     &--4col{    
         width: 100 / 6 * 4 * 1%;
+        &--img{
+            width:  calc(100 / 6 * 4 * 1% );
+        }
     }
 }
 
@@ -32,6 +44,49 @@
     margin-left:100 / 6 * 5 * 1%;
 }
 
-section{
-    min-height: 100vh;
+.col--1--reverse{
+    margin-right:100 / 6 * 1%;
+}
+.col--2--reverse{
+    margin-right:100 / 6 * 2 * 1%;
+}
+.col--3--reverse{
+    margin-right:100 / 6 * 3 * 1%;
+}
+.col--4--reverse{
+    margin-right:100 / 6 * 4 * 1%;
+}
+.col--5--reverse{
+    margin-right:100 / 6 * 5 * 1%;
+}
+
+.text--left{
+    text-align:left;
+}
+
+.text--right{
+    text-align:right;
+}
+
+.float--right{
+    float:right;
+}
+
+.float--left{
+    float:left;
+}
+
+.flex--column{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.wrapper{
+    &--start{
+        background:gray;
+    }
+    &--section{
+        height:100vh;
+    }
 }
