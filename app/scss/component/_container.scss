@@ -84,7 +84,10 @@
 
 .wrapper{
     &--start{
-        background:gray;
+        background:url('../assets/img/WAXteam.png');
+        h1{
+            text-shadow:0px 0px 1px black;
+        }
     }
     &--section{
         height:100vh;

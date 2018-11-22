@@ -364,7 +364,9 @@ template {
   flex-direction: column; }
 
 .wrapper--start {
-  background: gray; }
+  background: url("../assets/img/WAXteam.png"); }
+  .wrapper--start h1 {
+    text-shadow: 0px 0px 1px black; }
 
 .wrapper--section {
   height: 100vh; }
@@ -373,7 +375,8 @@ img {
   display: float;
   float: right;
   width: 100%;
-  z-index: 100000; }
+  z-index: 100000;
+  transition: .7s; }
 
 #wax {
   margin-top: 220px;
@@ -386,6 +389,23 @@ figure {
 
 figure:hover img {
   opacity: 0.6; }
+
+.img--manor {
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left; }
+  .img--manor--left {
+    transform-origin: right; }
+
+.img--osec {
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left; }
+  .img--osec--left {
+    transform-origin: right; }
+
+.decoration--osec {
+  height: 30%; }
 
 .lines {
   position: fixed;
@@ -606,7 +626,221 @@ body {
     opacity: 1; } }
 
 #manor {
-  margin-top: 30vh; }
+  padding-top: 30vh; }
+  #manor h1 {
+    text-shadow: 5px 5px 0px gray; }
+  #manor figure {
+    background: red; }
+  #manor .text--large {
+    color: lightgray; }
+  #manor p {
+    text-shadow: 0px 0px 1px lightgray; }
+
+.manor--mickey {
+  width: 110px;
+  margin-top: 5%;
+  transition: 2s; }
+
+.manor--mickey--tete {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .manor--mickey--tete--oreille {
+    position: absolute;
+    background: black;
+    width: 55%;
+    height: 60%;
+    border-radius: 100%;
+    top: 0%; }
+    .manor--mickey--tete--oreille--left {
+      left: 0%;
+      transform: translate(-50%, -50%) rotate(20deg); }
+    .manor--mickey--tete--oreille--right {
+      right: 0%;
+      transform: translate(50%, -50%) rotate(-20deg); }
+  .manor--mickey--tete--front {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    background-color: #e6c8a0;
+    border-radius: 100%;
+    top: 5%;
+    z-index: 30; }
+    .manor--mickey--tete--front--left {
+      left: 13%;
+      transform: rotate(10deg); }
+    .manor--mickey--tete--front--right {
+      right: 13%;
+      transform: rotate(-10deg); }
+  .manor--mickey--tete--joue {
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    background-color: #e6c8a0;
+    border-radius: 50%;
+    bottom: -12%;
+    z-index: 10; }
+    .manor--mickey--tete--joue--left {
+      left: 12%;
+      transform: rotate(-60deg);
+      border-left: 3px solid black;
+      border-top: 2px solid black; }
+    .manor--mickey--tete--joue--right {
+      right: 12%;
+      transform: rotate(60deg);
+      border-right: 3px solid black;
+      border-top: 2px solid black; }
+  .manor--mickey--tete--yeux {
+    overflow: hidden;
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 47.5%;
+    border: 3px black solid;
+    z-index: 30; }
+    .manor--mickey--tete--yeux--left {
+      left: 40%;
+      transform: translateX(-50%); }
+    .manor--mickey--tete--yeux--right {
+      right: 40%;
+      transform: translateX(50%); }
+    .manor--mickey--tete--yeux--pupille {
+      position: absolute;
+      bottom: 0%;
+      left: 60%;
+      background: black;
+      height: 50%;
+      width: 50%;
+      border-radius: 100%;
+      transform: translateX(-50%); }
+      .manor--mickey--tete--yeux--pupille--cligne--haut {
+        top: -5%;
+        animation: cligne-haut 5s infinite;
+        position: absolute;
+        background: #e6c8a0;
+        height: 60%;
+        width: 100%;
+        border-bottom: 3px solid black; }
+      .manor--mickey--tete--yeux--pupille--cligne--bas {
+        animation: cligne-bas 5s infinite;
+        position: absolute;
+        background: #e6c8a0;
+        height: 40%;
+        width: 100%;
+        border-top: 3px solid black;
+        bottom: 0; }
+  .manor--mickey--tete--nez {
+    z-index: 100;
+    position: absolute;
+    background: black;
+    width: 22%;
+    height: 18%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%); }
+    .manor--mickey--tete--nez--trait {
+      top: 47%;
+      position: absolute;
+      background: #e6c8a0;
+      border-top: 3px solid black;
+      height: 12%;
+      width: 35%;
+      z-index: 30;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100%; }
+  .manor--mickey--tete--bouche {
+    z-index: 20;
+    position: absolute;
+    background: black;
+    width: 50%;
+    height: 60%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    overflow: hidden;
+    border-bottom: 3px solid black; }
+    .manor--mickey--tete--bouche--trait {
+      top: 40%;
+      position: absolute;
+      background: #e6c8a0;
+      border-bottom: 4px solid black;
+      height: 40%;
+      width: 80%;
+      z-index: 21;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100%; }
+      .manor--mickey--tete--bouche--trait--petit {
+        z-index: 25;
+        position: absolute;
+        background: transparent;
+        width: 10%;
+        height: 10%;
+        border-radius: 100%;
+        bottom: 29%; }
+        .manor--mickey--tete--bouche--trait--petit--left {
+          left: 8%;
+          border-left: 3px solid black;
+          transform: rotate(60deg); }
+        .manor--mickey--tete--bouche--trait--petit--right {
+          right: 8%;
+          border-right: 3px solid black;
+          transform: rotate(-60deg); }
+    .manor--mickey--tete--bouche--menton {
+      bottom: -3%;
+      position: absolute;
+      background: #e6c8a0;
+      border-bottom: 4px solid black;
+      height: 18%;
+      width: 30%;
+      z-index: 19;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100%; }
+    .manor--mickey--tete--bouche--inside {
+      background: red;
+      position: absolute;
+      height: 20%;
+      width: 30%;
+      bottom: -5%;
+      border-radius: 100%;
+      z-index: 20;
+      transform: translateX(-50%); }
+      .manor--mickey--tete--bouche--inside--left {
+        left: 40%; }
+      .manor--mickey--tete--bouche--inside--right {
+        right: 10%;
+        border-top: 3px solid black;
+        transform: translateX(-50%) rotate(-10deg); }
+
+@keyframes cligne-bas {
+  0% {
+    height: 0%; }
+  5% {
+    height: 40%; }
+  10% {
+    height: 0%; }
+  100% {
+    height: 0%; } }
+
+@keyframes cligne-haut {
+  0% {
+    height: 0%; }
+  5% {
+    height: 60%; }
+  10% {
+    height: 0%; }
+  100% {
+    height: 0%; } }
 
 #nestle {
   position: relative; }
@@ -616,9 +850,55 @@ body {
 #osec {
   position: relative; }
   #osec h1 {
-    color: #b2cc2a; }
+    color: #b2cc2a;
+    text-shadow: -5px 5px 0px #81941b; }
   #osec figure {
     background: #b2cc2a; }
+  #osec p {
+    padding-left: 2px; }
+
+.osec--building {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 1s;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 15%;
+  background: #bebebe;
+  align-items: center; }
+  .osec--building--etage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+    margin-top: 10px;
+    width: 90%;
+    height: 30%; }
+    .osec--building--etage--fenetre {
+      width: 15%;
+      height: 40%;
+      background: lightblue;
+      border-bottom: #bebebe 5px solid; }
+    .osec--building--etage--porte {
+      background: brown;
+      height: 70%;
+      width: 15%;
+      align-self: flex-end;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 6px solid #742626;
+      border-bottom: none; }
+      .osec--building--etage--porte--poignee {
+        margin-left: 30%;
+        background: yellow;
+        border: 2px solid gold;
+        height: 10%;
+        width: 20%;
+        border-radius: 100px; }
 
 * {
   font-family: 'Oswald', sans-serif;

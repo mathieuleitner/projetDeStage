@@ -1,9 +1,62 @@
 #osec{
     position: relative;
     h1{
-        color:$osec
+        color:$osec;
+        text-shadow: -5px 5px 0px #81941b;
     }
     figure{
         background:$osec;
+    }
+    p{
+        padding-left:2px;
+    }
+    
+}
+
+.osec--building{
+    transform: scaleY(0);
+    transform-origin:bottom;
+    transition: 1s;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    height: 100%;
+    width: 15%;
+    background: rgb(190, 190, 190);
+    align-items: center;
+    &--etage{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background:lightgray;
+        margin-top:10px;
+        width:90%;
+        height:30%;
+        &--fenetre{
+            width: 15%;
+            height:40%;
+            background: lightblue;
+            border-bottom: rgb(190, 190, 190) 5px solid;
+        }
+        &--porte{
+            background:brown;
+            height: 70%;
+            width:15%;
+            align-self: flex-end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 6px solid rgb(116, 38, 38);
+            border-bottom:none;
+            &--poignee{
+                margin-left:30%;
+                background:yellow;
+                border:2px solid gold;
+                height: 10%;
+                width:20%;
+                border-radius:100px;
+            }
+        }
     }
 }
