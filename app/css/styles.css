@@ -713,13 +713,12 @@ body {
       transform: translateX(50%); }
     .manor--mickey--tete--yeux--pupille {
       position: absolute;
-      bottom: 0%;
       left: 60%;
       background: black;
       height: 50%;
       width: 50%;
       border-radius: 100%;
-      transform: translateX(-50%); }
+      transform: translate(-50%, -50%); }
       .manor--mickey--tete--yeux--pupille--cligne--haut {
         top: -5%;
         animation: cligne-haut 5s infinite;

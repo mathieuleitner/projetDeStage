@@ -103,13 +103,13 @@ padding-top:30vh;
         }
         &--pupille{
             position: absolute;
-            bottom:0%;
+            //bottom:0%;
             left: 60%;
             background:black;
             height:50%;
             width:50%;
             border-radius:100%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             &--cligne{
                 &--haut{
                     top:-5%;
