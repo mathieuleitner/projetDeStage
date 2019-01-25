@@ -379,8 +379,9 @@ img {
   transition: .7s; }
 
 #wax {
-  margin-top: 220px;
-  border: none; }
+  margin-top: 20px;
+  border: none;
+  z-index: 3456789; }
 
 figure {
   margin: 0;
@@ -422,9 +423,10 @@ figure:hover img {
   display: inline-block;
   vertical-align: top;
   height: 100%;
-  border-right: 1px solid #404040;
+  border-right: 1px solid #909090;
   transition: border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background-clip: padding-box; }
+  background-clip: padding-box;
+  opacity: 0.5; }
 
 .WhiteOnBlack {
   color: #111;
@@ -449,12 +451,20 @@ figure:hover img {
   display: inline;
   margin-left: 66.8%; }
 
-#intro {
+.intro {
   height: 100vh; }
+  .intro--texte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 body {
   transition: 1s;
   background: #111; }
+
+.white--div {
+  background: white; }
 
 #asside {
   position: fixed;
@@ -899,6 +909,22 @@ body {
         width: 20%;
         border-radius: 100px; }
 
+#sicpa h1 {
+  color: #fb5bcb;
+  text-shadow: 5px 5px 0px lightseagreen;
+  margin-top: 30vh;
+  margin-bottom: 20px; }
+
+#sicpa p {
+  color: black; }
+
+#pmi h1 {
+  margin-top: 30vh;
+  text-shadow: 5px 5px 0px gold; }
+
+#nespresso h1 {
+  margin-top: 30vh; }
+
 * {
   font-family: 'Oswald', sans-serif;
   margin: none;
@@ -915,6 +941,9 @@ h1 {
   line-height: span;
     line-height-margin: 0;
     line-height-margin-top: 20px; }
+
+h1 + p {
+  margin-top: 5px; }
 
 #styleguide {
   display: none; }

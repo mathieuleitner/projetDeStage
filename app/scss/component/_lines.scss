@@ -13,7 +13,8 @@
     display: inline-block;
     vertical-align: top;
     height: 100%;
-    border-right: 1px solid #404040;
+    border-right: 1px solid #909090;
     transition: border-color .6s cubic-bezier(.4,0,.2,1);
     background-clip: padding-box;
+    opacity: 0.5;
 }

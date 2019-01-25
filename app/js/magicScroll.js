@@ -85,7 +85,7 @@ $(window).scroll(function() {
           });
      }
 
-     else if (theta >= 28 && theta < 33){
+     else if (theta >= 28 && theta < 38){
           $('.img--osec').css({
                transform:"scaleX(1)"
           });
@@ -94,6 +94,66 @@ $(window).scroll(function() {
           });
           $('body').css({
                background:"gray"
+          });
+          $('.menu__label').css({
+               color:"white"
+          });
+          $('.menu__hamburger__part').css({
+               background:"rgb(178,204,42)"
+          });
+     }
+
+     // SICPA
+
+     else if (theta >= 38 && theta < 48){
+          $('.img--osec').css({
+               transform:"scaleX(1)"
+          });
+          $('.osec--building').css({
+               transform:"scaleY(1)"
+          });
+          $('body').css({
+               background:"white"
+          });
+          $('.menu__label').css({
+               color:"white"
+          });
+          $('.menu__hamburger__part').css({
+               background:"rgb(178,204,42)"
+          });
+     }
+
+     // PMI
+
+     else if (theta >= 48 && theta < 58){
+          $('.img--osec').css({
+               transform:"scaleX(1)"
+          });
+          $('.osec--building').css({
+               transform:"scaleY(1)"
+          });
+          $('body').css({
+               background:"#0066ff"
+          });
+          $('.menu__label').css({
+               color:"white"
+          });
+          $('.menu__hamburger__part').css({
+               background:"rgb(178,204,42)"
+          });
+     }
+
+      // Nespresso
+
+      else if (theta >= 58 && theta < 68){
+          $('.img--osec').css({
+               transform:"scaleX(1)"
+          });
+          $('.osec--building').css({
+               transform:"scaleY(1)"
+          });
+          $('body').css({
+               background:"#0d0d0d"
           });
           $('.menu__label').css({
                color:"white"

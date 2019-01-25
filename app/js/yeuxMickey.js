@@ -17,9 +17,7 @@ $(document).ready(function() {
             'left' : xPos + '%',
             'top' : yPos + '%'
         });
-        console.log('yPos = ' + yPos);
-        console.log('xPos = ' + xPos);
-       
+     
     });
 
 });

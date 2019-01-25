@@ -32,13 +32,17 @@
         </div>
     </section>
     
-    <img class="col--1--reverse float--right container--1col" src="assets/img/waxinteractive.png" id="wax" alt="">
+    
     <div class="wrapper--start">
-        <section id="intro" class="col--1 container--4col">
-            <div >
-                <h1 id="IntroMessage">Mathieu <span class="blue text--h1">ft.</span></h1>
-                <h1 class="BlackOnWhite"  id="Wax">Wax Interactive.</h1>
-            </div>
+        <section class="col--1 intro container--4col">
+                <div class="intro--texte container--4col">       
+                    <h1 id="IntroMessage">Mathieu <span class="blue text--h1">ft.</span></h1>
+                    <div class="white--div">
+                        <img class="float--right container--1col" src="assets/img/waxinteractive.png" id="wax" alt="">
+                        <h1 class="BlackOnWhite"  id="Wax">Wax</h1>
+                        <h1 class="BlackOnWhite">Interactive</h1>
+                    </div>      
+                </div>
         </section>
     </div>
     <section>   </section>
@@ -52,7 +56,7 @@
     </div>
     
 </div>
-<div class="wrapper--section" id="manor">
+<div class="wrapper--section" onscroll="myFunction()" id="manor">
 
         <figure class="container--2col col--1--reverse img--manor" id="mickey90">
             <img src="assets/img/Mickey90.PNG" alt="">
@@ -133,7 +137,6 @@
 
 <div class="flex--column wrapper--section" id="osec">
        
-
     <section class="col--1 container--4col" >
         <figure class="container--3col float--left img--osec">
             <img src="assets/img/OSEC.png">
@@ -153,7 +156,7 @@
         </figure>
     </div>
     <div class="decoration--osec">
-        <div class="col--1 osec--building float--left" style="transition-delay:1.5s">
+        <div class="col--2 osec--building float--left" style="transition-delay:1.5s">
             <div class="osec--building--etage">
                 <div class="osec--building--etage--fenetre"></div>
                 <div class="osec--building--etage--fenetre"></div>
@@ -176,7 +179,7 @@
                 <div class="osec--building--etage--fenetre"></div>
             </div>
         </div>
-        <div class="osec--building float--right col--1--reverse" style="transition-delay:1.7s">
+        <div class="osec--building float--right col--2--reverse" style="transition-delay:1.7s">
                 <div class="osec--building--etage">
                     <div class="osec--building--etage--fenetre"></div>
                     <div class="osec--building--etage--fenetre"></div>
@@ -202,8 +205,53 @@
         </div>
 </div>
 
+<div class="flex--column wrapper--section" id="sicpa">
+ 
+    <section class="col--1 container--4col" >
+        <h1>Sicpa</h1>
+        <p class="container--3col">Avec l'équipe Frontend de WAX, composée de David Bernard, Robin Ferrari et moi-même, nous avons mis en place en framework HTML / SASS alimenté par les backends de Genève.
+            Le programme ainsi réalisé sert pour la chambre de commerce et d'industrie de l'état de Vaud.                                   
+        </p>
+    </section>
+
+</div>
+
+<div class="flex--column wrapper--section" id="pmi">
+ 
+    <section class="col--2 container--4col" >
+        <h1>Philip Morris International</h1>
+        <p class="container--3col">Avec l'équipe Frontend de WAX, composée de David Bernard, Robin Ferrari et moi-même, nous avons mis en place en framework HTML / SASS alimenté par les backends de Genève.
+            Le programme ainsi réalisé sert pour la chambre de commerce et d'industrie de l'état de Vaud.                                   
+        </p>
+    </section>
+
+</div>
+
+<div class="flex--column wrapper--section" id="nespresso">
+ 
+    <section class="col--1 container--4col" >
+        <h1>Nespresso</h1>
+        <p class="container--3col">Avec l'équipe Frontend de WAX, composée de David Bernard, Robin Ferrari et moi-même, nous avons mis en place en framework HTML / SASS alimenté par les backends de Genève.
+            Le programme ainsi réalisé sert pour la chambre de commerce et d'industrie de l'état de Vaud.                                   
+        </p>
+    </section>
+
+    <div class="nespresso__machine">
+        
+    </div>  
+
+</div>
+
+<script>
+        document.getElementById("manor").onscroll = function() {myFunction()};
+        
+        function myFunction() {
+            console.log("waddup");
+        }
+        </script>
 <script src="js/magicScroll.js"></script>
 <script src="js/textMachine.js"></script>
 <script src="js/yeuxMickey.js"></script>
+<script src="js/fluentScroll.js"></script>
 </body>
 </html>
