@@ -1,5 +1,152 @@
 #nespresso{
     h1{
         margin-top: 30vh;
+        color: black;
+        text-shadow: -5px 5px 0px brown;
+        line-height: 1.3;
+    }
+    p{
+        color: black;
+        
     }
 }
+
+.machine{
+    margin-top: 30vh;
+    &__bouton{
+      cursor: pointer;
+      background: grey;
+      height: 33%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 20%;
+      z-index: 100;
+      border-radius: 50%;
+      position: absolute;
+      top: 5%;
+      &__inside {
+        height:81%;
+        width:81%;
+        background: black;
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 10%;
+        &__bottom {
+          width:10%;
+          height: 6%;
+          background: black;
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    height: 300px;
+    width: 240px;
+    overflow: hidden;
+    &__top {
+      background: brown;
+      height: 25%;
+      width: 50%;
+      margin-left: 25%;
+      border-top-left-radius: 40%; 
+      border-top-right-radius: 40%;
+      position: relative;
+      &__inside{
+        width: 50%;
+        background: black;
+        height: 60%;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        border-top-left-radius: 50%; 
+        border-top-right-radius: 50%;
+      }
+    }
+    &__mid {
+      overflow: hidden;
+      background: brown;
+      height: 45%;
+      width: 75%;
+      margin-left:12.5%;
+      border-top-left-radius: 20%; 
+      border-top-right-radius: 20%;
+      position: relative;
+      &__gligli{
+        width: 15%;
+        background: black;
+        height: 80%;
+        position: absolute;
+        bottom: 50%;
+        left: 42.5%;
+      }
+      &__inside {
+        position: absolute;
+        bottom: -10%;
+        background: rgb(32, 32, 32);
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+        border-top-left-radius: 20%; 
+        border-top-right-radius: 20%;
+        &__tasse{
+          height: 60%;
+          width: 40%;
+          background: white;
+          position: absolute;
+          bottom: 10%;
+          left: 30%;
+          z-index: 1;
+        }
+        &__hanse{
+          z-index: 0;
+          border-radius: 100%;
+          height: 20%;
+          width: 30%;
+          border: 4px solid white;
+          background: rgb(32, 32, 32);
+          position: absolute;
+          bottom: 30%;
+          right: 18%;
+        }
+      }
+    }
+    &__bottom {
+      background: brown;
+      height: 35%;
+      width: 100%;
+      border-top-left-radius: 12% 45%; 
+      border-top-right-radius: 12% 45%;
+      &__inside{
+        background: black;
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        border-top-left-radius: 15% 27%; 
+        border-top-right-radius: 15% 27%;
+        position: relative;
+        &__support{
+          width: 90%;
+          height: 130%;
+          background: rgb(20, 20, 20);
+          position: absolute;
+          bottom: -50%;
+          margin-left: 5%;
+          border-radius: 50%; 
+        }
+      }
+    }
+  }
+  
+  .coffee{
+    display: block;
+    background: brown;
+    height: 500px;
+    width: 5%;
+    margin-left: 47.5%;
+    transform: translateY(-100%);
+    &__container{
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+  }

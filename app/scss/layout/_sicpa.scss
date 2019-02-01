@@ -1,5 +1,6 @@
 #sicpa{
     h1{
+        text-align: right;
         color: rgb(251, 91, 203);
         text-shadow: 5px 5px 0px lightseagreen;
         margin-top: 30vh;
@@ -9,4 +10,71 @@
     p{
         color: black;
     }
+    .billet{
+        margin-left: 5px;
+        margin-top: 30vh;
+        position: relative;
+        display: flex;
+        height:200px;
+        width: 133px;
+        background: yellow;
+        //transform: rotate(90deg);
+        &__number{
+          color: orange;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 0.8;
+        }
+        &__texte{
+          color: blue;
+          text-transform: uppercase;
+          font-size: 7px;
+        }
+        &__left{
+          width:40%;
+          background: orange;
+        }
+        &__right{
+          
+          width:60%;
+        }
+        .blue{
+          padding-left: 5%;
+          background: white;
+          height: 25%;
+          width: 95%;
+          position: absolute;
+          top: 70%;
+        }
+        .terre{
+          height: 25%;
+          width: 37%;
+          background: gold;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          border-radius: 50px;
+        }
+        .bande{
+          height: 10%;
+          width: 100%;
+          position: absolute;
+          background: darkorange;
+          top: 60%;
+          opacity:0.5;
+        }
+      }
+
+      .video__sicpa{
+        transform: translate(-490px, -361px);
+        height: 1200px;
+        width: 1200px;
+      }
+      
+      .video__container{
+        margin-top: 25vh;
+        overflow: hidden;
+        height: 370px;
+        width: 215px;
+      }
 }

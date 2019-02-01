@@ -14,7 +14,7 @@ $(window).scroll(function() {
      
      else if(theta >= 3 && theta < 8){
           $('body').css({
-               background:"red"
+               background:"#d63939"
           });
           $('.menu__label').css({
                color:"white"
@@ -32,7 +32,7 @@ $(window).scroll(function() {
 
      else if(theta >= 8 && theta < 14){
           $('body').css({
-               background:"red"
+               background:"#d63939"
           });
           $('.menu__label').css({
                color:"white"
@@ -116,10 +116,10 @@ $(window).scroll(function() {
                background:"white"
           });
           $('.menu__label').css({
-               color:"white"
+               color:"black"
           });
           $('.menu__hamburger__part').css({
-               background:"rgb(178,204,42)"
+               background:"rgb(251, 91, 203)"
           });
      }
 
@@ -139,7 +139,7 @@ $(window).scroll(function() {
                color:"white"
           });
           $('.menu__hamburger__part').css({
-               background:"rgb(178,204,42)"
+               background:"gold"
           });
      }
 
@@ -153,13 +153,13 @@ $(window).scroll(function() {
                transform:"scaleY(1)"
           });
           $('body').css({
-               background:"#0d0d0d"
+               background:"#e1c292"
           });
           $('.menu__label').css({
-               color:"white"
+               color:"black"
           });
           $('.menu__hamburger__part').css({
-               background:"rgb(178,204,42)"
+               background:"brown"
           });
      }
 
